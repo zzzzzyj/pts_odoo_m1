@@ -36,7 +36,7 @@ export default class App extends Component {
   componentDidMount() {
     KeyEvent.onKeyDownListener((keyEvent) => {
       if (keyEvent.keyCode == 139 || keyEvent.keyCode == 140 || keyEvent.keyCode == 141) {
-        NativeModules.ScanAndRfidDemo.readCardUid();
+        NativeModules.ScanAndRfid.readCardUid();
       }
     });
 
